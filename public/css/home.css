@@ -1,0 +1,714 @@
+@font-face {
+    font-family: "Mada";
+    src: url("../fonts/Mada-Regular.ttf");
+}
+@font-face {
+    font-family: "Mada Bold";
+    src: url("../fonts/Mada-Bold.ttf");
+    font-weight: bold;
+}
+@font-face{
+    font-family: "Mada Light";
+    src: url("../fonts/Mada-Light.ttf");
+}
+@font-face{
+    font-family: "Mada Black";
+    src: url("../fonts/Mada-Black.ttf");
+}
+ul{
+    background-color: #007bff00;
+}
+
+body {
+    font-family: "Mada"; 
+    font-weight: 300;
+ }
+
+ .button-div{
+    position:absolute;
+    bottom:0;
+    height: 50px;
+
+    background-color: #601035;
+ }
+ .vertical-center {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+ .navbar-text p {
+     margin-bottom: 5px;
+     font-size: 13px;
+ }
+
+ .center{
+     text-align: center;
+ }
+
+ .m-li{
+    margin: 0px 10px;
+ }
+
+ .m-contact-info{
+    margin-left: 30px;
+ }
+
+ .m-text-decription{
+    margin-top: 30px;
+    margin-bottom: 15px;
+ }
+
+ .bg-header-compania{
+    background-image: url("../imgs/compania_fondo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    display: table;
+    width: 100%;
+ }
+
+ .bg-header-servicio{
+    background-image: url("../imgs/servicio_fondo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    display: table;
+    width: 100%;
+ }
+
+ .bg-header-casos{
+    background-image: url("../imgs/casos_fondo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    display: table;
+    width: 100%;
+ }
+
+ .bg-header-contacto{
+    background-image: url("../imgs/contacto_fondo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100% 100%;
+    display: table;
+    width: 100%;
+ }
+
+ .header-title{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+ }
+
+
+
+ .centered-text{
+     text-align: center;
+ }
+
+.enviar-button{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    color: #888a8c;
+}
+
+.success{
+    color:white;
+}
+
+input, textarea{
+    border-radius: 0rem !important;
+}
+
+.social-icon{
+    height: 36px;
+}
+
+
+.p-21{
+    font-size: 21px;
+    color: #BBBBBB;
+}
+
+.bottom-20{
+   
+    padding-bottom: 40px
+}
+
+footer{
+    background-color: white;
+    height: 130px;
+    padding-top: 60px;
+    font-size: 10px;
+}
+
+.footer-text{
+    text-align: center;
+    color: #888a8c;  
+}
+
+.div-bg{
+    height:350px;
+    margin-top: 40px;
+}
+
+
+/*****************************/
+
+/*Estudios de opinion publica*/
+
+/*****************************/
+
+.templelogo{
+    position: absolute;
+    top: 7.8%;
+    left: 6.8%;
+}
+
+.numeros{
+    color: #fff;
+    position: absolute;
+    top: 3%;
+    left: 70%;
+}
+
+.introd{
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 15%; 
+}
+
+.solici{
+    font-family: 'Mada';
+    color: #fff;
+ /*   position: relative;*/
+    background: rgba(236, 37, 82, 1);
+    /*top: 73%;*/
+    left: 0%;
+    
+    padding: 3.5% 5.5%;
+    border:none;
+}
+
+.solici:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+ .bg-header-estu-cuanti{
+    background-image: url("../imgs/adorno.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: table;
+    width: 100%;
+    height: 10rem;
+    padding-top: 4rem;
+ }
+.cuanti{
+    color:#AD003A;
+    text-align: center;
+    font-weight: bold;
+}
+
+.infocuanti{
+    color:#BBBBBB;
+    font-size: 22px;
+    text-align: center;
+}
+
+.tipoEstudio{
+    color:#601035;
+    text-align: left;  
+    font-weight: bold;  
+}
+
+ul>.opc { 
+    color:#67768A; 
+    list-style-image: url("../imgs/puntito.png"); 
+}
+
+ul>.opcOtra{ 
+    color:#601035; 
+    list-style-image: url("../imgs/puntoAzul.png"); 
+}
+
+.benchmark{
+    font-size: 16px;
+    color:#BBBBBB;
+    text-align: left;
+}
+
+.servi{
+    color: #fff;
+    background:#601035;
+    padding: 4.5% 16.5%;
+    border: solid 1px #fff;
+}
+
+.servi:hover{
+    color: #fff;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.diseno{
+    color: #fff;
+    font-size: 25px;   
+    text-align: center;
+    padding-top: 7%;
+}
+
+.otros{
+    color: #2A445D;
+    margin-bottom: 2%;
+}
+
+.bg-otros-servicios{
+    background-image: url("../imgs/otrosServicios.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    display: table;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom:4%;
+ }
+
+.ver{
+    color: #131C2E;
+    background: transparent;
+    border: solid 1px #131C2E;
+    padding: 20px 40px;
+}
+
+.ver:hover{
+ color: #EC2552;
+ text-decoration: none;
+ border: solid 1px #EC2552;
+}
+
+.nav-link{
+    color: white;
+    font-weight: 600;
+
+}
+
+.contacto-link{
+    background-color: #ec2651;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.medio-adorno{
+    background-image: url(../imgs/adorno.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: table;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    margin-top: -80px;
+    z-index: 1;
+}
+
+.adorno-title{
+    background-image: url(../imgs/adorno.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: table;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+.fondo-tinto{
+    background-image: url(../imgs/fondo-tinto.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: table;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+.text-black{
+    color:black;
+}
+
+.center-title{
+    vertical-align: middle;
+    line-height: 10rem;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.p-bottom{
+  
+    bottom: 0;
+   
+}
+
+.margin-top-30{
+    margin-top: 30px;
+}
+
+.div-img-container{
+    height: 120px;
+    min-width: 120px;
+}
+
+.text-pink{
+    color: #ad073d;
+}
+
+.text-gray{
+    color: #BBBBBB;
+}
+
+.line-height-dot-5{
+    line-height: 0.5rem;
+}
+
+@media only screen and (min-width:340px) and (max-width:1023px) {
+    #datoSitio{
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+  .ver{
+    top: 86% !important;
+  } 
+ 
+  #spann{
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (min-width:340px) and (max-width:760px) {
+         #fotitos{
+            padding-left: 0% !important;
+            width: 44%;
+        }
+        #imgsConsu{
+          width: 41%;
+        }   
+    }
+
+@media only screen and (min-width:340px) and (max-width:790px) {
+        #fotitos{
+            padding-left: 0% !important;
+        }
+        .bg-otros-servicios{
+            background-image: none;
+            background: #f7f7f7;
+        }
+        #veo-veo{
+           margin-right: 12% !important;
+        }
+        #visto{
+                margin-right: 7% !important;
+        }
+        #infodiv{
+            border-right:0px solid #95989A !important;
+        }
+        #formita{
+            margin-left: 0px !important;
+        }
+        .copy{
+            text-align: center !important;
+        }
+    }
+
+@media only screen  and (max-width:767px) {
+    .bg-header-contacto{
+        background-image: none;
+        background-color: #4d162a;;
+     }
+
+     .div-bg{
+         height: auto;
+     }
+
+     .templelogo{
+         height: 25%;
+     }
+     .numeros{
+        left: 35%;
+        top: 10%;
+        font-size: 10px;
+     }
+     .introd{
+        left: 3%;
+        top:37%;
+     }
+
+     h1{
+         font-size:2rem;
+     }
+     
+    
+  }
+
+
+@media only screen and (min-width:768px) and (max-width:995px) {
+   .numeros{
+         font-size: 11px !important;
+   } 
+}
+
+/*********************************/
+/*  Consultoria Politica */
+/*********************************/
+
+.estrate{
+    color:#AD003A;
+    text-align: center;  
+    font-weight: bold;  
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:850px) and (min-width:480px){
+    ul{
+        background-color: #ffffff00;
+
+    }
+    .contacto-link {
+    background-color: #ec2651;
+    padding: 12px;
+    width: 25%;
+}
+   
+    .back-img{
+        background: url("../imgs/banner-consultoria-politica_480x500.jpg") no-repeat top center ;
+         background-size: 100% 100%;
+         height: 100vh;
+         width: 100%;
+       
+    }
+    .back-img-opinion{
+        background: url("../imgs/banner-estudios-opinion-publica_480x500.jpg") no-repeat top center ;
+         background-size: 100% 100%;
+         height: 100vh;
+         width: 100%;
+       
+    }
+
+    .back-img-home{
+    background: url("../imgs/banner-servicios-consultoria-opinion_480x500.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+
+    .back-img-promocion{
+    background: url("../imgs/banner-promocion-activacion_480x500.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+
+}
+@media only screen and (min-width:850px){
+    .back-img{
+    background: url("../imgs/banner-consultoria-politica.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+    .back-img-opinion{
+    background: url("../imgs/banner-estudios-opinion-publica.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+    .back-img-home{
+    background: url("../imgs/banner-servicios-consultoria-opinion.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+
+    .back-img-promocion{
+    background: url("../imgs/banner-promocion-activacion.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+
+     
+}
+@media only screen and (max-width:480px){
+    ul{
+        background-color: #ffffff00;
+    }
+    .contacto-link {
+    background-color: #ec2651;
+    padding: 12px;
+    width: 25%;
+    border: 1px solid #ec2650;
+    border-radius: 5px;
+    }
+    .title-margin-top{
+    margin-top: 50%;
+ }
+
+    .back-img{
+        background: url("../imgs/banner-consultoria-politica_480x640.jpg") no-repeat top center ;
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .back-img-opinion{
+        background: url("../imgs/banner-estudios-opinion-publica_480x640.jpg") no-repeat top center ;
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .back-img-home{
+    background: url("../imgs/banner-servicios-consultoria-opinion_480x640.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+
+    .back-img-promocion{
+    background: url("../imgs/banner-promocion-activacion_480x640.jpg") no-repeat top center ;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    }
+
+    
+}
+
+/*Tamaño de fuente responsivos */
+@media only screen and (min-width:1100px){
+    .sub{
+         color:white;
+         top: 43%;
+         font-size: 32px;
+         
+         font-family: "Mada Light";
+        
+     }
+    .sub-edop{
+         color:white;
+         font-size: 25px;
+         font-family: "Mada Light";
+        
+     }
+
+     .titulo{
+        color:white;
+        font-size: 45px;
+        font-family: "Mada Black";
+     }     
+     
+}
+@media only screen and (max-width:1100px){
+    .sub{
+        color:white;
+         font-size: 30px;
+         font-family: "Mada Light"
+     }
+     .titulo{
+        color:white;
+        font-size: 40px;
+        font-family: "Mada Black";
+     }     
+     
+}
+@media only screen and (max-width:800px) and (min-width:415px){
+    .sub{
+        top: 40%;
+         font-size: 25px;
+         font-family: "Mada Light"
+     }
+     .titulo{
+        color:white;   
+        font-size: 35px;
+        font-family: "Mada Black";
+     }
+
+}
+@media only screen and (max-width:415px)  {
+    .sub{
+        font-size: 18px;
+        font-family: "Mada Light"
+     }
+     .titulo{
+        color:white;
+        font-size:25px;
+        font-family: "Mada Black";
+     }     
+   
+     
+}
+@media only screen and (min-width:800px){
+    .vh-height{
+        height:  100vh;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width:1360px){
+    .img-width{
+        width: 75px;
+    }
+    .brand-logo{
+        height:50px; 
+    }
+     .nav-link{
+        font-size: 12px;
+     }
+}
+
+
+.test{
+    position: absolute;
+    top:35%;
+    left:15%;
+
+}
+.consultoria-politica{
+    position: absolute;
+    top:35%;
+    left:15%;
+
+}
+
+.sub-edop{
+    color:white; 
+}
+.titulo{
+    color:white;
+}
+
