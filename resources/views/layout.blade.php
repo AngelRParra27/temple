@@ -2,14 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="description" content="consultora persuasión y comunicación política">
         <link rel="stylesheet" type="text/css" href="/css/app.css">
         <link rel="stylesheet" type="text/css" href="/css/home.css">
         <title>Temple Consulting</title> 
     </head>
-    <body>
+    <body style="background-color: white">
     <nav class="navbar navbar-expand-lg  fixed-top" id="menunav"> 
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -53,14 +54,34 @@
         </div>
     </div>
     </nav>
-    
+
     <section>
          @yield('section')
     </section>
    
-    
+    <div style="background: #131C2E;">
+        <div style="border-top: 1px solid white;"></div>
+        <div class="container" style="margin-top: 3%">
+        
+                <div class="row"> 
+                    <div class="col-md-1"></div>   
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <p style="font-size:14px;color: #fff;text-align:left;" class="copy">Temple Consulting® |  Todos los derechos </p>
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <a href="terminos.php"><p style="font-size:14px;color: #fff;text-align:right;" class="copy">Términos y Condiciones</p></a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+        </div>
+    </div>  
+  
+
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/jquery.visible.min.js') }}"></script>
+@stack('scripts')
 <script>    
     $(document).ready(function(){
         if($(window).width() < 850){

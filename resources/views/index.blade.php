@@ -83,7 +83,7 @@
             <br> 
             <p class="text-center p-21 font-bold">Consultoría Política</p>
             <br> 
-            <p class="text-center p-bottom"><a class="ver" href="consultoria-politica.php">VER SERVICIO</a></p> 
+            <p class="text-center p-bottom"><a class="ver" href="{{url('/consultoria')}}">VER SERVICIO</a></p> 
              <br>
         </div>
         <div class="col-sm-6 col-md-4" style=";">
@@ -93,7 +93,7 @@
             <br>
             <p class="text-center p-21 font-bold ">Estudios de Opinión Pública</p>
             <br> 
-            <p class="text-center p-bottom"><a class="ver" href="estudio-opinion-publica.php">VER SERVICIO</a></p> 
+            <p class="text-center p-bottom"><a class="ver" href="{{url('/estudio')}}">VER SERVICIO</a></p> 
             <br>
         </div>
         <div class="col-sm-6 col-md-4" style=";">
@@ -103,7 +103,7 @@
             <br>
             <p class="text-center p-21 font-bold">Promoción y Activación política</p> 
             <br>
-            <p class="text-center p-bottom"><a class="ver" href="promocion-activacion-politica.php">VER SERVICIO</a></p> 
+            <p class="text-center p-bottom"><a class="ver" href="{{url('/promocion')}}">VER SERVICIO</a></p> 
              <br>
         </div>     
     </div>
@@ -232,31 +232,16 @@
             </div>                        
         </div> 
     </div>    
-    </div>                
-                <hr style="color: #95989A;background-color: #95989A;width:100%;margin-right: 18%;">
-    <div class="container">
-        <div class="col-md-12" style="margin-top: 4%;">
-                <div class="row"> 
-                    <div class="col-md-1"></div>   
-                    <div class="col-md-5 col-sm-12 col-xs-12">
-                        <p style="font-size:14px;color: #fff;text-align:left;" class="copy">Temple Consulting® |  Todos los derechos </p>
-                    </div>
-                    <div class="col-md-5 col-sm-12 col-xs-12">
-                        <a href="terminos.php"><p style="font-size:14px;color: #fff;text-align:right;" class="copy">Términos y Condiciones</p></a>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-        </div>        
-    </div>  
+              
+  
+   
 </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
    
     
 </body>
-<script src="{{ asset('js/app.js') }}"></script>
+@push('scripts')
 <script>
 $(document).ready(function(){
  
@@ -391,4 +376,5 @@ $("#button").click(function() {
 }
 });*/
 </script>
+@endpush
 @stop

@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/promocion', function(){
+	return view('promocion-activacion-politica');
+});
+Route::get('/consultoria', function(){
+	return view('consultoria-politica');
+});
+Route::get('/estudio', function(){
+	return view('estudio-opinion-publica');
+});
