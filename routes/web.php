@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'inicioController@index');
 Route::get('/promocion', function(){
 	return view('promocion-activacion-politica');
 });

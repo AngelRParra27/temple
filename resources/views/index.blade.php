@@ -2,11 +2,8 @@
 @section('section')
 <div id="inicio" class="back-img-home" style="position:relative ;z-index:999 ;">
     <div class="test"> 
-        <span class="titulo">Servicios de consultoría, estudio  </span><br>
-        <span class="titulo">de opinión pública y promoción pública </span><br><br>
-        <span class="sub"  id="spann">Incorporar tecnología electoral con</span><br>
-        <span class="sub"  id="spann">principios científicos para tomar decisiones</span><br>
-        <span class="sub"  id="spann">en las campañas.</span>
+        <span class="titulo">{!!nl2br($home->banner->titulo)!!}</span><br>
+        <span class="sub"  id="spann">{!!nl2br($home->banner->subtitulo)!!}</span><br>
            <br>
         <br>
         <br>
@@ -22,11 +19,11 @@
     <div class="container " >
         <div class="row bottom-20">
             <div class="col-sm-12">
-                <h2 class="text-center" style="color:#71002f;font-weight:bold;">Acerca de</h2>
+                <h2 class="text-center" style="color:#71002f;font-weight:bold;">{{$home->layout1->titulo}}</h2>
             </div>
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                <p class="text-center p-21">Temple Consulting busca la tranquilidad y seguridad ante lo desconocido durante una campaña. Crea confianza y motivación para instrumentar las acciones políticas. Dándole sentido de equidad al servicio que se recibe.</p>
+                <p class="text-center p-21">{!!nl2br($home->layout1->texto)!!}</p>
             </div>
             <div class="col-sm-2"></div>
         </div>    
@@ -36,24 +33,24 @@
         <div class="row " >
         
             <div class="col-md-6">
-              <h3 class="font-bold">Nuestra visión</h3> 
+              <h3 class="font-bold">{{$home->layout1->titulo2}}</h3> 
                 <div class="row">
                   <div class="col-md-3 text-center">
                     <img src="./imgs/vision.png" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-9">
-                   <p class="text-gray">Ser la firma consultora más importante del mundo hispano en persuasión y comunicación política, poseedora de la mejor tecnología para formar opinión pública y generar conductas sociales a favor de nuestros clientes.</p> 
+                   <p class="text-gray">{!!nl2br($home->layout1->texto2)!!}</p> 
                   </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <h3 class="font-bold">Nuestra misión</h3>
+                <h3 class="font-bold">{{$home->layout1->titulo3}}</h3>
                 <div class="row">
                   <div class="col-md-3 text-center">
                     <img src="./imgs/mision.png" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-9">
-                    <p class="text-gray">Ayudar a las instituciones o personas de pensamiento humanista en sus procesos de comunicación y persuasión a través de métodos científicos y valores humanistas, desarrollando estrategias capaces de formar opinión pública favorable, e instrumentar métodos que garanticen la participación y aprobación de los ideales de nuestros clientes.</p>
+                    <p class="text-gray">{{$home->layout1->texto3}}</p>
                   </div>
                 </div>
             </div>
@@ -70,7 +67,7 @@
     <div class="row" style="">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-                <p class="text-center p-21">La integración de servicios que ayuda a mantener un control preciso a la toma de decisiones y fortalece el rumbo de acciones que encaminen a establecer una figura política dinámica que conecte con la audiencia segmentada.</p>
+                <p class="text-center p-21">{{$home->layout2->texto}}</p>
         </div>
         <div class="col-sm-2"></div>
     </div>
@@ -81,7 +78,7 @@
                 <img src="./imgs/servicios-home/consultoria-politica.png" class="img-fluid mx-auto d-block img-width" id="imgsConsu"  alt="" style="">  
             </div>
             <br> 
-            <p class="text-center p-21 font-bold">Consultoría Política</p>
+            <p class="text-center p-21 font-bold">{{$home->layout2->nombre}}</p>
             <br> 
             <p class="text-center p-bottom"><a class="ver" href="{{url('/consultoria')}}">VER SERVICIO</a></p> 
              <br>
@@ -91,7 +88,7 @@
                 <img src="./imgs/servicios-home/opinion-publica.png" class="img-fluid mx-auto d-block img-width" id="imgsConsu" alt=""  style="padding-top:35px;">  
             </div>
             <br>
-            <p class="text-center p-21 font-bold ">Estudios de Opinión Pública</p>
+            <p class="text-center p-21 font-bold ">{{$home->layout2->nombre2}}</p>
             <br> 
             <p class="text-center p-bottom"><a class="ver" href="{{url('/estudio')}}">VER SERVICIO</a></p> 
             <br>
@@ -101,7 +98,7 @@
                 <img src="./imgs/servicios-home/promocion-activacion-politica.png" class="img-fluid mx-auto d-block img-width"  id="imgsConsu" alt="">
             </div>
             <br>
-            <p class="text-center p-21 font-bold">Promoción y Activación política</p> 
+            <p class="text-center p-21 font-bold">{{$home->layout2->nombre3}}</p> 
             <br>
             <p class="text-center p-bottom"><a class="ver" href="{{url('/promocion')}}">VER SERVICIO</a></p> 
              <br>
