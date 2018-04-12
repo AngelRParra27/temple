@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\inicio;
 
 class bannerController extends Controller
 {
@@ -13,7 +14,8 @@ class bannerController extends Controller
      */
     public function index()
     {
-        //
+        $home = inicio::with('banner', 'layout1', 'layout2', 'layout3')->first();
+        return view('layouts.banner', compact('home'));
     }
 
     /**

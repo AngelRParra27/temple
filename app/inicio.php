@@ -18,4 +18,7 @@ class inicio extends Model
     public function layout2(){
     	return $this->hasOne('App\layout2', 'id', 'section_1');
     }
+    public function layout3(){
+    	return $this->hasOne('App\layout3', 'id', 'section_1');
+    }
 }

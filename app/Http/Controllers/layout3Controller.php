@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\inicio;
 
 class layout3Controller extends Controller
 {
@@ -13,7 +14,8 @@ class layout3Controller extends Controller
      */
     public function index()
     {
-        //
+        $home = inicio::with('banner', 'layout1', 'layout2', 'layout3')->first();
+        return view('layouts.layout3', compact('home'));
     }
 
     /**

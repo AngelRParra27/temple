@@ -21,3 +21,16 @@ Route::get('/consultoria', function(){
 Route::get('/estudio', function(){
 	return view('estudio-opinion-publica');
 });
+
+Route::get('/admin', function(){
+	return view('adminPanel');
+});
+
+Route::resource('/layout1', 'layout1Controller');
+//route::get('/layout1', 'layout1Controller@index');
+
+route::get('/layout2', 'layout2Controller@index');
+
+route::get('/layout3', 'layout3Controller@index');
+
+route::get('/banner', 'bannerController@index');

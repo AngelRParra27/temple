@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\inicio;
+use App\layout1;
 
 class layout1Controller extends Controller
 {
@@ -12,8 +14,9 @@ class layout1Controller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
+    {  
+        $home = inicio::with('banner', 'layout1', 'layout2', 'layout3')->first();
+        return view('layouts.layout1', compact('home'));
     }
 
     /**
@@ -68,8 +71,25 @@ class layout1Controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
+       /* $this->validate($request, [
+         'img2' => 'required|file'
+   ]);*/ 
+        return $request;
+       
+        $path_1 = $request->file('img2')->store('/public/imgs');
+       // return $request;
+        $layout = layout1::find($id)->first();
+        $layout->texto = $request->texto;
+        $layout->texto2 = $request->texto2;
+        $layout->texto3 = $request->texto3;
+        $layout->titulo = $request->titulo;
+        $layout->titulo2 = $request->titulo2;
+        $layout->titulo3 = $request->titulo3;
+        $layout->img2 = $path_1;
+        $layout->img3 = $request->img3;
+        $layout->save();
+        return $layout;
+    }   
 
     /**
      * Remove the specified resource from storage.

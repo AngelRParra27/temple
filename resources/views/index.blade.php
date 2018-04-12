@@ -125,13 +125,13 @@
 
 <div id="casos" class="container vh-height" style=" display:flex; justify-content: center; flex-direction: column;">
     <div class="adorno-title">
-       <h2 class="text-center center-title font-bold title-margin-top">Casos de éxito</h2>
+       <h2 class="text-center center-title font-bold title-margin-top">{{$home->layout3->titulo}}</h2>
     </div>
 
     <div class="row bottom-20">
         <div class="col-md-2"></div>
         <div class="col-sm-12 col-md-8">
-                <p class="text-center p-21">En Temple Consulting nos esforzamos por ofrecer el mejor servicio a nuestros clientes y para ello generamos alianzas con empresas especializadas que complementan  nuestra labor estratégica, mercadológica, tecnológica y empresarial.</p>
+                <p class="text-center p-21">{{$home->layout3->texto}}</p>
         </div>
         <div class="col-md-2"></div>
     </div>
@@ -147,7 +147,7 @@
                en encuestas
            </p>
            <p class="text-gray text-center">
-               Con más de 300 encuestas nuestros resultados cumplen con el índice de confianza y margen de error derivado del uso de tecnologías de la información.
+               {{$home->layout3->texto2}}
            </p>
        </div>
        <div class="col-sm-6 col-md-4">
@@ -161,7 +161,7 @@
                de experiencia
            </p>
            <p class="text-gray text-center">
-               En campañas políticas  en México, Venezuela, Honduras y Bolivia nos permiten resolver con mayor efectividad las necesidades de nuestros clientes.
+               {{$home->layout3->texto3}}
            </p>
        </div>
        <div class="col-sm-6 col-md-4">
@@ -175,7 +175,7 @@
                planeados se han cumplido
            </p>
            <p class="text-gray text-center">
-               Hemos participado en más de 50 procesos electorales a nivel municipal, estatal y nacional.
+               {{$home->layout3->texto4}}
            </p>
        </div>
     </div>

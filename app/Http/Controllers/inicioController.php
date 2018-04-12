@@ -14,7 +14,7 @@ class inicioController extends Controller
     public function index()
     {   
         $home = inicio::find('1')->first();
-        $home = inicio::with('banner', 'layout1', 'layout2')->first();
+        $home = inicio::with('banner', 'layout1', 'layout2', 'layout3')->first();
         return view('index', compact('home'));
     }
 

@@ -15,6 +15,6 @@ class layout1 extends Model
     	'img2',
     	'titulo3',
     	'texto3',
-    	'img3'
+    	'img3',
     ];
 }
