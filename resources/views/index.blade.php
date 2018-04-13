@@ -36,7 +36,7 @@
               <h3 class="font-bold">{{$home->layout1->titulo2}}</h3> 
                 <div class="row">
                   <div class="col-md-3 text-center">
-                    <img src="./imgs/vision.png" class="img-fluid" alt="">
+                    <img src="./imgs/{{$home->layout1->img2}}" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-9">
                    <p class="text-gray">{!!nl2br($home->layout1->texto2)!!}</p> 
@@ -47,7 +47,7 @@
                 <h3 class="font-bold">{{$home->layout1->titulo3}}</h3>
                 <div class="row">
                   <div class="col-md-3 text-center">
-                    <img src="./imgs/mision.png" class="img-fluid" alt="">
+                    <img src="./imgs/{{$home->layout1->img3}}" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-9">
                     <p class="text-gray">{{$home->layout1->texto3}}</p>

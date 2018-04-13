@@ -71,26 +71,32 @@ class layout1Controller extends Controller
      */
     public function update(Request $request, $id)
     {   
-        $imageName = $request->file('img2')->getClientOriginalName();
-        $request->file('img2')->move(
-            base_path() . '/public/imgs/', $imageName
-        );
-        $file1=$imageName;
-        $imageName = $request->file('img3')->getClientOriginalName();
-        $request->file('img3')->move(
-            base_path() . '/public/imgs/', $imageName
-        );
-        $file2=$imageName;
-
         $layout = layout1::find($id)->first();
+
+        if($request->hasfile('img2')){
+            $imageName = $request->file('img2')->getClientOriginalName();
+            $request->file('img2')->move(
+                base_path() . '/public/imgs/', $imageName
+            );
+            $file1=$imageName;
+            $layout->img2 = $file1;
+
+        };
+        if($request->hasfile('img3')){
+            $imageName = $request->file('img3')->getClientOriginalName();
+            $request->file('img3')->move(
+                base_path() . '/public/imgs/', $imageName
+            );
+            $file2=$imageName;
+            $layout->img3 = $file2;
+        };
+   
         $layout->texto = $request->texto;
         $layout->texto2 = $request->texto2;
         $layout->texto3 = $request->texto3;
         $layout->titulo = $request->titulo;
         $layout->titulo2 = $request->titulo2;
         $layout->titulo3 = $request->titulo3;
-        $layout->img2 = $file1;
-        $layout->img3 = $file2;
         $layout->save();
         return $layout;
     }   
@@ -101,18 +107,7 @@ class layout1Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function upload(Request $request){
-    $imageName = $request->file('img2')->getClientOriginalName();
-    $ext =$request->file('img2')->getClientOriginalExtension();
-    $request->file('img2')->move(
-        base_path() . '/public/imgs/', $imageName
-    );
-    $imageName = $request->file('img3')->getClientOriginalName();
-    $request->file('img3')->move(
-        base_path() . '/public/imgs/', $imageName
-    );
-
-    }
+  
     public function destroy($id)
     {
         //

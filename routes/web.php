@@ -30,7 +30,8 @@ Route::resource('/layout1', 'layout1Controller');
 route::POST('/updateLayout1/{id}', 'layout1Controller@update');
 
 route::get('/layout2', 'layout2Controller@index');
+route::POST('/updateLayout2/{id}', 'layout2Controller@update');
 
-route::get('/layout3', 'layout3Controller@index');
+route::resource('/layout3', 'layout3Controller');
 
 route::get('/banner', 'bannerController@index');
