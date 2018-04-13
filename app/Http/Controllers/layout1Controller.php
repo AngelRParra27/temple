@@ -70,14 +70,18 @@ class layout1Controller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-       /* $this->validate($request, [
-         'img2' => 'required|file'
-   ]);*/ 
-        return $request;
-       
-        $path_1 = $request->file('img2')->store('/public/imgs');
-       // return $request;
+    {   
+        $imageName = $request->file('img2')->getClientOriginalName();
+        $request->file('img2')->move(
+            base_path() . '/public/imgs/', $imageName
+        );
+        $file1=$imageName;
+        $imageName = $request->file('img3')->getClientOriginalName();
+        $request->file('img3')->move(
+            base_path() . '/public/imgs/', $imageName
+        );
+        $file2=$imageName;
+
         $layout = layout1::find($id)->first();
         $layout->texto = $request->texto;
         $layout->texto2 = $request->texto2;
@@ -85,8 +89,8 @@ class layout1Controller extends Controller
         $layout->titulo = $request->titulo;
         $layout->titulo2 = $request->titulo2;
         $layout->titulo3 = $request->titulo3;
-        $layout->img2 = $path_1;
-        $layout->img3 = $request->img3;
+        $layout->img2 = $file1;
+        $layout->img3 = $file2;
         $layout->save();
         return $layout;
     }   
@@ -97,6 +101,18 @@ class layout1Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function upload(Request $request){
+    $imageName = $request->file('img2')->getClientOriginalName();
+    $ext =$request->file('img2')->getClientOriginalExtension();
+    $request->file('img2')->move(
+        base_path() . '/public/imgs/', $imageName
+    );
+    $imageName = $request->file('img3')->getClientOriginalName();
+    $request->file('img3')->move(
+        base_path() . '/public/imgs/', $imageName
+    );
+
+    }
     public function destroy($id)
     {
         //

@@ -27,7 +27,7 @@ Route::get('/admin', function(){
 });
 
 Route::resource('/layout1', 'layout1Controller');
-//route::get('/layout1', 'layout1Controller@index');
+route::POST('/updateLayout1/{id}', 'layout1Controller@update');
 
 route::get('/layout2', 'layout2Controller@index');
 
