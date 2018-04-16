@@ -22,6 +22,7 @@ ul{
 body {
     font-family: "Mada"; 
     font-weight: 300;
+    background-color: white;
  }
 
  .button-div{
@@ -299,7 +300,10 @@ ul>.opcOtra{
 .nav-link{
     color: white;
     font-weight: 600;
+}
 
+.navbar-nav .nav-link{
+    margin-top: -3%
 }
 
 .contacto-link{
@@ -386,6 +390,11 @@ ul>.opcOtra{
     line-height: 0.5rem;
 }
 
+.ter{
+    font-size:14px;color: #fff;
+    text-align:left;
+}
+
 @media only screen and (min-width:340px) and (max-width:1023px) {
     #datoSitio{
         font-size: 16px !important;
@@ -432,7 +441,7 @@ ul>.opcOtra{
         #formita{
             margin-left: 0px !important;
         }
-        .copy{
+        .ter-mobile{
             text-align: center !important;
         }
     }
@@ -711,4 +720,14 @@ html, body {
 .titulo{
     color:white;
 }
+
+.termAndConditions{
+    background: #131C2E;
+    border-top: 1px solid white;
+}
+
+.termAndConditions div{
+    padding: 15px 0px;
+}
+
 

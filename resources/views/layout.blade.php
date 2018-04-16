@@ -10,21 +10,18 @@
         <link rel="stylesheet" type="text/css" href="/css/home.css">
         <title>Temple Consulting</title> 
     </head>
-    <body style="background-color: white">
+    <body>
     <nav class="navbar navbar-expand-lg  fixed-top" id="menunav"> 
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="./imgs/logo-temple-header.png" class="brand-logo" alt=""> 
         </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-  
-        <img src="./imgs/Burger.png" height="35px" width="40px">
-    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"> 
+        <img src="./imgs/Burger.png" height="35px" width="40px">   
     </button>
         <div class="collapse navbar-collapse" id="navbarText">
         <ul id="menu-desplegable" class="navbar-nav ml-auto" >
             <li class="nav-item m-li active">
-
                 <a id="ini" class="nav-link " href=".#/">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li id="comp"  class="nav-item m-li">
@@ -41,10 +38,10 @@
             </li>
             
             <li class="nav-item m-li">
-                <a style="margin-top: -3%" class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=523339445826"><img class="telefonito" src="./imgs/telefonito.png" height="35px"> +52 (33) 3944.5826</a>
+                <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=523339445826"><img class="telefonito" src="./imgs/telefonito.png" height="35px"> +52 (33) 3944.5826</a>
             </li>
             <li class="nav-item m-li">
-            <a  style="margin-top: -3%" class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=523339445826"><img src="./imgs/whatsapp.png" height="35px"> +52 (33) 3944.5826</a>
+            <a  class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=523339445826"><img src="./imgs/whatsapp.png" height="35px"> +52 (33) 3944.5826</a>
             </li>
             <li id="mobile" class="nav-item m-li hidden">
                 <a class="nav-link contacto-link text-center" href="#contacto" >Contacto</a>
@@ -59,17 +56,17 @@
          @yield('section')
     </section>
    
-    <div style="background: #131C2E;">
-        <div style="border-top: 1px solid white;"></div>
-        <div class="container" style="margin-top: 3%">
-        
+    <div class="termAndConditions">
+        <div class="container">       
                 <div class="row"> 
                     <div class="col-md-1"></div>   
                     <div class="col-md-5 col-sm-12 col-xs-12">
-                        <p style="font-size:14px;color: #fff;text-align:left;" class="copy">Temple Consulting® |  Todos los derechos </p>
+                        <p class="ter-mobile ter">Temple Consulting® |  Todos los derechos </p>
                     </div>
                     <div class="col-md-5 col-sm-12 col-xs-12">
-                        <a href="terminos.php"><p style="font-size:14px;color: #fff;text-align:right;" class="copy">Términos y Condiciones</p></a>
+                        <a href="terminos.php">
+                            <p class="ter-mobile ter">Términos y Condiciones</p>
+                        </a>
                     </div>
                     <br>
                     <br>
@@ -80,61 +77,9 @@
   
 
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 <script src="{{ asset('js/jquery.visible.min.js') }}"></script>
 @stack('scripts')
-<script>    
-    $(document).ready(function(){
-        if($(window).width() < 850){
-            $('ul').css('background-color', "#131c2f57");
-            $('#mobile').show();
-            $('#desktop').hide();
-        }else{
-            $('#mobile').hide();
-            $('#desktop').show();
-        }
-    });
-    
-    $(window).scroll(function(event){
-    var st = $(this).scrollTop();
-    if(st > 0){
-        $('nav').css('background-color', "#131c30");
-        $('ul').css('background-color', "");
-
-    }else{
-        $('nav').css('background-color', "");
-         if($(window).width() < 850){
-
-        $('ul').css('background-color', "#131c30");
-        }else{
-             $('ul').css('background-color', "");
-        }
-    }
-    });
-
-   $(document).on('click', '.contacto-link', function(){
-        $('.collapse').collapse("hide");
-    })
-
-   $('.navbar-toggler').click(function(){
-    $('nav').css('background-color', "#131c30");
-   })
-
-    $('.navbar-nav>li>a').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
-    });
-   
- 
-
-    if($(window).width() < 850){
-            $('ul').css('background-color', "#131c2f57");
-            $('#mobile').show();
-            $('#desktop').hide();
-        }else{
-            $('#mobile').hide();
-            $('#desktop').show();
-        }
-
-</script>
 </body>
 </html>
 
