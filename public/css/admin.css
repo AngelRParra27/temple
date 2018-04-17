@@ -1,0 +1,24 @@
+    #navegacion{
+        background-color: black;
+    }
+    .contenedor{
+        height: 50%;
+    }
+
+    .menuElement{
+    	background-color: rgb(23, 23, 23)
+    }
+
+    .space{
+    	margin: 15px 0 0 0;
+    }
+
+   /* Home Banner*/
+   #inicio {
+   		position:relative ;
+   		z-index:999 ;
+   }
+
+   .modal textarea{
+   		height:150px;
+   }
