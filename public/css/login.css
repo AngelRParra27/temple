@@ -1,0 +1,15 @@
+.card-body{
+	background-image: url('/imgs/Temple_login_fon.png');
+	background-size: 102%;
+}
+
+.col-form-label{
+	color: white;
+}
+
+.template-button{
+	background: none;
+	border: solid white 1px;
+	color: white;
+	border-radius: 0px;
+}

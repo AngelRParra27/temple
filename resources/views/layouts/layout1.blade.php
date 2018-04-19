@@ -1,4 +1,4 @@
-@extends('adminPanel')
+@extends('adminPanel', ['menu' => $menu])
 @section('contenido')
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <style>
@@ -13,11 +13,11 @@
     <div class="container " >
         <div class="row bottom-20">
             <div class="col-sm-12">
-                <h2 id="edit_1" class="text-center" style="color:#71002f;font-weight:bold;"><span class="fa fa-edit fa-sm button"></span>{{$home->layout1->titulo}}</h2>
+                <h2 id="edit_1" class="text-center" style="color:#71002f;font-weight:bold;"><span class="fa fa-edit fa-sm button"></span>{{$layout1->titulo}}</h2>
             </div>
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                <p id="texto_1" class="text-center p-21">{!!nl2br($home->layout1->texto)!!}</p>
+                <p id="texto_1" class="text-center p-21">{!!nl2br($layout1->texto)!!}</p>
             </div>
             <div class="col-sm-2"></div>
         </div>    
@@ -27,24 +27,24 @@
         <div class="row " >
         
             <div class="col-md-6">
-              <h3 id="edit_2" class="font-bold"><span class="fa fa-edit button"></span>{{$home->layout1->titulo2}}</h3>
+              <h3 id="edit_2" class="font-bold"><span class="fa fa-edit button"></span>{{$layout1->titulo2}}</h3>
                 <div class="row">
                   <div class="col-md-3 text-center">
-                    <img id="img_1" src="./imgs/{{$home->layout1->img2}}" class="img-fluid" alt="">
+                    <img id="img_1" src="./imgs/{{$layout1->img2}}" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-9">
-                   <p id="texto_2" class="text-gray">{!!nl2br($home->layout1->texto2)!!}</p> 
+                   <p id="texto_2" class="text-gray">{!!nl2br($layout1->texto2)!!}</p> 
                   </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <h3 id="edit_3" class="font-bold"><span class="fa fa-edit button"></span>{{$home->layout1->titulo3}}</h3>
+                <h3 id="edit_3" class="font-bold"><span class="fa fa-edit button"></span>{{$layout1->titulo3}}</h3>
                 <div class="row">
                   <div class="col-md-3 text-center">
-                    <img id="img_2" src="./imgs/{{$home->layout1->img3}}" class="img-fluid" alt="">
+                    <img id="img_2" src="./imgs/{{$layout1->img3}}" class="img-fluid" alt="">
                   </div>
                   <div class="col-md-9">
-                    <p id="texto_3" class="text-gray">{{$home->layout1->texto3}}</p>
+                    <p id="texto_3" class="text-gray">{{$layout1->texto3}}</p>
                   </div>
                 </div>
             </div>
@@ -63,9 +63,9 @@
       </div>
       <div class="modal-body">
         <label>Titulo</label>
-        <input  id="titulo" class="form-control" type="text" name="titulo" value="{{$home->layout1->titulo}}">
+        <input  id="titulo" class="form-control" type="text" name="titulo" value="{{$layout1->titulo}}">
         <label>Contenido</label>
-        <textarea id="texto1" class="form-control" type="text" name="texto" style="height:150px">{{$home->layout1->texto}}</textarea> 
+        <textarea id="texto1" class="form-control" type="text" name="texto" style="height:150px">{{$layout1->texto}}</textarea> 
       </div>
       <div class="modal-footer">
         <button id="guardar_1" type="submit" class="btn btn-primary">Guardar Cambios</button>
@@ -87,9 +87,9 @@
       <div class="modal-body">
         <form id="sec2">
         <label>Titulo</label>
-        <input id="titulo2" class="form-control" type="text" name="titulo2" value="{{$home->layout1->titulo2}}">
+        <input id="titulo2" class="form-control" type="text" name="titulo2" value="{{$layout1->titulo2}}">
         <label>Contenido</label>
-        <textarea id="texto2" class="form-control" type="text" name="texto2" style="height:150px">{{$home->layout1->texto2}}</textarea> 
+        <textarea id="texto2" class="form-control" type="text" name="texto2" style="height:150px">{{$layout1->texto2}}</textarea> 
         <label>Imagen</label>
         <input id="img2"  class="form-control" type="file" name="img2">
         </form>
@@ -113,9 +113,9 @@
       </div>
       <div class="modal-body">
         <label>Titulo</label>
-        <input id="titulo3" class="form-control" type="text" name="titulo3" value="{{$home->layout1->titulo3}}">
+        <input id="titulo3" class="form-control" type="text" name="titulo3" value="{{$layout1->titulo3}}">
         <label>Contenido</label>
-        <textarea id="texto3" class="form-control" type="text" name="texto3" style="height:150px">{{$home->layout1->texto3}}</textarea> 
+        <textarea id="texto3" class="form-control" type="text" name="texto3" style="height:150px">{{$layout1->texto3}}</textarea> 
         <label>Imagen</label>
         <input id="img3" class="form-control" type="file" name="img3">
       </div>
@@ -128,7 +128,7 @@
 </div>
 
 <script>
-   var id = {!! json_encode($home->section_1)!!};
+   var id = {!! json_encode($layout1)!!};
 
   $(document).on('click', '#edit_1', function(){
     $('#modal1').modal('show');

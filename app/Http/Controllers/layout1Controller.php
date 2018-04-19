@@ -15,8 +15,10 @@ class layout1Controller extends Controller
      */
     public function index()
     {  
-        $home = inicio::with('banner', 'layout1', 'layout2', 'layout3')->first();
-        return view('layouts.layout1', compact('home'));
+        return view('layouts.layout1', [
+            'menu' => 'Home',
+            'layout1' => layout1::first()
+        ]);
     }
 
     /**
