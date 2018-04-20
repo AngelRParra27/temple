@@ -1,4 +1,4 @@
-@extends('adminPanel', ['menu' => $menu])
+@extends('adminPanel', ['menu' => $menu, 'section' => $section])
 @section('contenido')
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <style>

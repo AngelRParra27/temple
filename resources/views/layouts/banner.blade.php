@@ -1,4 +1,4 @@
-@extends('adminPanel', ['menu' => $menu])
+@extends('adminPanel', ['menu' => $menu, 'section' => $section])
 @section('contenido')
 <div id="inicio" class="back-img-home">
     <div class="test"> 

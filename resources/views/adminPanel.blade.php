@@ -29,8 +29,8 @@
                 <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="{{$menu == 'Home' ? 'true' : 'false'}}"  class="{{$menu == 'Home' ? 'collapsed' : ''}}">Home</a>
                     <ul class="collapse list-unstyled menuElement {{$menu == 'Home' ? 'show' : ''}}" id="homeSubmenu">
-                        <li><a href="/banner">Banner</a></li>
-                        <li><a href="/layout1">Sección 1</a></li>
+                        <li><a href="/banner" class="{{$section  == 'Banner' ? 'active' : '' }}">Banner</a></li>
+                        <li><a href="/layout1" class="{{$section  == 'layer_1' ? 'active' : '' }}">Sección 1</a></li>
                         <li><a href="/layout2">Sección 2</a></li>
                         <li><a href="/layout3">Sección 3</a></li>
                     </ul>

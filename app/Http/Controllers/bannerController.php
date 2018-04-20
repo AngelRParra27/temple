@@ -17,6 +17,7 @@ class bannerController extends Controller
     {
         return view('layouts.banner', [
             'menu' => 'Home',
+            'section' => 'Banner',
             'banner' => banners::first()
         ]);
     }

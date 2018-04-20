@@ -17,6 +17,7 @@ class layout1Controller extends Controller
     {  
         return view('layouts.layout1', [
             'menu' => 'Home',
+            'section' => 'layer_1',
             'layout1' => layout1::first()
         ]);
     }
